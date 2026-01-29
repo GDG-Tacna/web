@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: '**.gdg.community',
       },
+      {
+        protocol: 'https',
+        hostname: '**.dicebear.com',
+      },
     ],
   },
   experimental: {
