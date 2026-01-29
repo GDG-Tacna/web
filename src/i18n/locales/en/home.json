@@ -63,6 +63,12 @@
     "viewAll": "View All Events",
     "noEvents": "No upcoming events at the moment. Check back soon!"
   },
+  "eventsList": {
+    "sectionTitle": "Events",
+    "upcoming": "Upcoming Events",
+    "past": "Past Events",
+    "participants": "participants"
+  },
   "callToAction": {
     "title": "Ready to Join Us?",
     "description": "Become part of our growing community of developers and tech enthusiasts.",
