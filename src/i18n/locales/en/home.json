@@ -53,6 +53,10 @@
     "events": "Events Hosted",
     "years": "Years Active"
   },
+  "members": {
+    "title": "Meet Our Members",
+    "subtitle": "The tech enthusiasts who make our community possible"
+  },
   "upcomingEvents": {
     "title": "Upcoming Events",
     "subtitle": "Don't miss our next meetups and workshops",

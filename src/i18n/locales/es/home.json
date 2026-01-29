@@ -53,6 +53,10 @@
     "events": "Eventos Realizados",
     "years": "Años Activos"
   },
+  "members": {
+    "title": "Conoce a Nuestros Miembros",
+    "subtitle": "Los apasionados por la tecnología que hacen posible nuestra comunidad"
+  },
   "upcomingEvents": {
     "title": "Próximos Eventos",
     "subtitle": "No te pierdas nuestras próximas reuniones y talleres",
