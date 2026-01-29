@@ -3,6 +3,8 @@ import { Container } from '@/presentation/components/ui/Container'
 import { Button } from '@/presentation/components/ui/Button'
 import { Link } from '@/i18n/routing'
 import { Users, Calendar, Code, Heart, Lightbulb, Zap } from 'lucide-react'
+import { communityMembers } from '@/data/members'
+import Image from 'next/image'
 import { EventCard } from '@/presentation/components/ui/EventCard'
 
 export default function HomePage() {
@@ -233,6 +235,46 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* Members Section */}
+      <section className="bg-gradient-to-br from-neutral-50 to-neutral-100 py-16">
+        <Container>
+          <div className="mx-auto max-w-6xl">
+            <h2 className="mb-4 text-center text-3xl font-bold text-neutral-900">
+              {t('members.title')}
+            </h2>
+            <p className="mb-12 text-center text-lg text-neutral-700">
+              {t('members.subtitle')}
+            </p>
+
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+              {communityMembers.map((member) => (
+                <div
+                  key={member.id}
+                  className="flex flex-col items-center gap-3"
+                >
+                  <div className="relative h-24 w-24 overflow-hidden rounded-full bg-gradient-to-br from-gdg-blue to-gdg-green p-1 shadow-lg transition-transform hover:scale-110">
+                    <div className="h-full w-full overflow-hidden rounded-full bg-white">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={96}
+                        height={96}
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="text-center">
+                    <p className="text-sm font-semibold text-neutral-900">
+                      {member.name}
+                    </p>
+                    {member.role && (
+                      <p className="text-xs text-gdg-blue">{member.role}</p>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
       {/* Events Section */}
       <section className="bg-neutral-50 py-16">
         <Container>
