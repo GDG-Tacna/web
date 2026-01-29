@@ -6,6 +6,47 @@
     "primaryCta": "Join Community",
     "secondaryCta": "View Events"
   },
+  "whatIsGdg": {
+    "title": "What is a GDG?",
+    "description": "Google Developer Groups (GDG) are volunteer-driven, non-profit communities that bring together developers, students, and technology professionals interested in Google technologies and software development.",
+    "details": "We organize events, workshops, technical talks, and hackathons where we share knowledge, experiences, and build projects together. We are part of a global network of over 1000 GDGs worldwide.",
+    "features": {
+      "learning": {
+        "title": "Continuous Learning",
+        "description": "Access workshops, technical talks, and educational resources about the latest Google technologies and development trends."
+      },
+      "networking": {
+        "title": "Networking",
+        "description": "Meet and collaborate with other developers, share experiences, and create valuable professional connections."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Participate in hackathons, collaborative projects, and experiment with new technologies in a supportive environment."
+      }
+    }
+  },
+  "whyCommunity": {
+    "title": "Why is Being Part of a Tech Community Important?",
+    "subtitle": "Belonging to a technology community goes beyond simply learning to code. It's about growing, connecting, and creating impact together.",
+    "benefits": {
+      "growth": {
+        "title": "Accelerated Professional Growth",
+        "description": "Learn from others' experiences, stay updated with the latest technology trends, and develop skills you won't find in online tutorials. Knowledge sharing in a community helps you grow faster."
+      },
+      "support": {
+        "title": "Support Network and Mentorship",
+        "description": "Face technical challenges with the backing of other members. Whether you're a beginner or expert, there's always someone willing to help or learn from you. Communities create a safe space to ask questions and experiment."
+      },
+      "opportunities": {
+        "title": "Opportunities and Visibility",
+        "description": "Participate in events, give talks, contribute to open source projects, and expand your professional network. Many job opportunities and collaborations are born within tech communities."
+      },
+      "collaboration": {
+        "title": "Collaboration and Impact",
+        "description": "Work on projects that matter, contribute to the local tech ecosystem, and share your knowledge with others. Together we can create a positive impact in our region and beyond."
+      }
+    }
+  },
   "stats": {
     "title": "Our Community in Numbers",
     "members": "Active Members",
@@ -17,6 +58,12 @@
     "subtitle": "Don't miss our next meetups and workshops",
     "viewAll": "View All Events",
     "noEvents": "No upcoming events at the moment. Check back soon!"
+  },
+  "eventsList": {
+    "sectionTitle": "Events",
+    "upcoming": "Upcoming Events",
+    "past": "Past Events",
+    "participants": "participants"
   },
   "callToAction": {
     "title": "Ready to Join Us?",

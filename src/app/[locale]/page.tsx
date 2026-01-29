@@ -1,10 +1,51 @@
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { Container } from '@/presentation/components/ui/Container'
 import { Button } from '@/presentation/components/ui/Button'
 import { Link } from '@/i18n/routing'
+import { Users, Calendar, Code, Heart, Lightbulb, Zap } from 'lucide-react'
+import { EventCard } from '@/presentation/components/ui/EventCard'
 
 export default function HomePage() {
   const t = useTranslations('home')
+  const locale = useLocale()
+
+  const events = [
+    {
+      title: 'Google I/O Extended Tacna 2025',
+      date: new Date('2025-07-15'),
+      participants: 120,
+      type: 'upcoming' as const,
+    },
+    {
+      title: 'Android Study Jam',
+      date: new Date('2025-08-20'),
+      participants: 50,
+      type: 'upcoming' as const,
+    },
+    {
+      title: 'Cloud Hero: Kubernetes',
+      date: new Date('2024-10-10'),
+      participants: 80,
+      type: 'past' as const,
+    },
+    {
+      title: 'DevFest Tacna 2024',
+      date: new Date('2024-11-25'),
+      participants: 200,
+      type: 'past' as const,
+    },
+  ]
+
+  const upcomingEvents = events.filter((e) => e.type === 'upcoming')
+  const pastEvents = events.filter((e) => e.type === 'past')
+
+  const formatDate = (date: Date) => {
+    return date.toLocaleDateString(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  }
 
   return (
     <div>
@@ -42,6 +83,133 @@ export default function HomePage() {
         </Container>
       </section>
 
+      {/* What is GDG Section */}
+      <section className="bg-white py-16">
+        <Container>
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-center text-3xl font-bold text-neutral-900">
+              {t('whatIsGdg.title')}
+            </h2>
+            <p className="mb-6 text-center text-lg text-neutral-700">
+              {t('whatIsGdg.description')}
+            </p>
+            <div className="mb-8 text-center">
+              <p className="text-neutral-600">{t('whatIsGdg.details')}</p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div className="rounded-lg bg-gdg-blue/5 p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <Code className="h-12 w-12 text-gdg-blue" />
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                  {t('whatIsGdg.features.learning.title')}
+                </h3>
+                <p className="text-neutral-600">
+                  {t('whatIsGdg.features.learning.description')}
+                </p>
+              </div>
+
+              <div className="rounded-lg bg-gdg-red/5 p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <Users className="h-12 w-12 text-gdg-red" />
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                  {t('whatIsGdg.features.networking.title')}
+                </h3>
+                <p className="text-neutral-600">
+                  {t('whatIsGdg.features.networking.description')}
+                </p>
+              </div>
+
+              <div className="rounded-lg bg-gdg-yellow/5 p-6 text-center">
+                <div className="mb-4 flex justify-center">
+                  <Lightbulb className="h-12 w-12 text-gdg-yellow" />
+                </div>
+                <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                  {t('whatIsGdg.features.innovation.title')}
+                </h3>
+                <p className="text-neutral-600">
+                  {t('whatIsGdg.features.innovation.description')}
+                </p>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Why Community Matters Section */}
+      <section className="bg-gradient-to-br from-neutral-50 to-neutral-100 py-16">
+        <Container>
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-8 text-center text-3xl font-bold text-neutral-900">
+              {t('whyCommunity.title')}
+            </h2>
+            <p className="mb-12 text-center text-lg text-neutral-700">
+              {t('whyCommunity.subtitle')}
+            </p>
+
+            <div className="space-y-6">
+              <div className="flex gap-4 rounded-lg bg-white p-6 shadow-sm">
+                <div className="flex-shrink-0">
+                  <Zap className="h-8 w-8 text-gdg-blue" />
+                </div>
+                <div>
+                  <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                    {t('whyCommunity.benefits.growth.title')}
+                  </h3>
+                  <p className="text-neutral-600">
+                    {t('whyCommunity.benefits.growth.description')}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 rounded-lg bg-white p-6 shadow-sm">
+                <div className="flex-shrink-0">
+                  <Heart className="h-8 w-8 text-gdg-red" />
+                </div>
+                <div>
+                  <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                    {t('whyCommunity.benefits.support.title')}
+                  </h3>
+                  <p className="text-neutral-600">
+                    {t('whyCommunity.benefits.support.description')}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 rounded-lg bg-white p-6 shadow-sm">
+                <div className="flex-shrink-0">
+                  <Calendar className="h-8 w-8 text-gdg-green" />
+                </div>
+                <div>
+                  <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                    {t('whyCommunity.benefits.opportunities.title')}
+                  </h3>
+                  <p className="text-neutral-600">
+                    {t('whyCommunity.benefits.opportunities.description')}
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4 rounded-lg bg-white p-6 shadow-sm">
+                <div className="flex-shrink-0">
+                  <Users className="h-8 w-8 text-gdg-yellow" />
+                </div>
+                <div>
+                  <h3 className="mb-2 text-xl font-semibold text-neutral-900">
+                    {t('whyCommunity.benefits.collaboration.title')}
+                  </h3>
+                  <p className="text-neutral-600">
+                    {t('whyCommunity.benefits.collaboration.description')}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Stats Section */}
       <section className="bg-white py-16">
         <Container>
@@ -62,6 +230,57 @@ export default function HomePage() {
               <div className="text-neutral-600">{t('stats.years')}</div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Events Section */}
+      <section className="bg-neutral-50 py-16">
+        <Container>
+          <h2 className="mb-12 text-center text-3xl font-bold text-neutral-900">
+            {t('eventsList.sectionTitle')}
+          </h2>
+
+          {/* Upcoming Events */}
+          {upcomingEvents.length > 0 && (
+            <div className="mb-12">
+              <h3 className="mb-6 text-2xl font-semibold text-neutral-800">
+                {t('eventsList.upcoming')}
+              </h3>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {upcomingEvents.map((event, index) => (
+                  <EventCard
+                    key={index}
+                    title={event.title}
+                    date={formatDate(event.date)}
+                    count={event.participants}
+                    participantsLabel={t('eventsList.participants')}
+                    type="upcoming"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Past Events */}
+          {pastEvents.length > 0 && (
+            <div>
+              <h3 className="mb-6 text-2xl font-semibold text-neutral-800">
+                {t('eventsList.past')}
+              </h3>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {pastEvents.map((event, index) => (
+                  <EventCard
+                    key={index}
+                    title={event.title}
+                    date={formatDate(event.date)}
+                    count={event.participants}
+                    participantsLabel={t('eventsList.participants')}
+                    type="past"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </Container>
       </section>
 

@@ -1,7 +1,13 @@
 {
   "title": "About GDG Tacna",
+  "description": "Google Developer Groups (GDG) Tacna is a community of developers passionate about technology and innovation. We gather to learn, share knowledge, and create solutions that positively impact our region.",
   "mission": "Our Mission",
+  "ourMission": "To foster technological development in Tacna through collaborative learning, innovation, and knowledge sharing about Google technologies and other emerging platforms.",
+  "vision": "Our Vision",
+  "ourVision": "To be the most influential tech community in the region, training world-class developers who contribute to Peru's digital growth.",
   "values": "Our Values",
   "history": "Our History",
-  "whatIsGDG": "What is GDG?"
+  "whatIsGDG": "What is GDG?",
+  "joinUs": "Join Us",
+  "joinUsDescription": "Be part of a vibrant community of developers. Participate in events, workshops, and projects that will help you grow professionally."
 }

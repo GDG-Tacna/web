@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 import { Container } from '@/presentation/components/ui/Container'
 
 export function Footer() {
-  const t = useTranslations('footer')
+  const t = useTranslations('common.footer')
   const currentYear = new Date().getFullYear()
 
   return (

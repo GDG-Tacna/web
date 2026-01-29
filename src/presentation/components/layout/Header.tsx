@@ -6,7 +6,7 @@ import { LanguageSwitcher } from './LanguageSwitcher'
 import { Container } from '@/presentation/components/ui/Container'
 
 export function Header() {
-  const t = useTranslations('navigation')
+  const t = useTranslations('common.navigation')
 
   const navItems = [
     { key: 'events', href: '/events' },
