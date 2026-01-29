@@ -17,11 +17,14 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white">
+    <header className="sticky top-0 z-50 border-b border-neutral-200/50 bg-white/80 backdrop-blur-md transition-all duration-300 shadow-sm">
       <Container>
         <nav className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
-            <span className="text-xl font-bold text-neutral-900">
+          <Link
+            href="/"
+            className="flex items-center gap-3 transition-transform duration-300 hover:scale-105"
+          >
+            <span className="text-xl font-bold text-neutral-900 transition-colors duration-300 hover:text-gdg-blue">
               GDG Tacna
             </span>
           </Link>
@@ -31,7 +34,10 @@ export function Header() {
               <Link
                 key={item.key}
                 href={item.href}
-                className="text-neutral-700 transition-colors hover:text-gdg-blue"
+                className="relative text-neutral-700 transition-colors duration-300 hover:text-gdg-blue
+                           after:absolute after:bottom-0 after:left-1/2 after:h-0.5 after:w-0
+                           after:bg-gdg-blue after:transition-all after:duration-300
+                           hover:after:left-0 hover:after:w-full"
               >
                 {t(item.key)}
               </Link>

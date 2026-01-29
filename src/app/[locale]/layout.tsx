@@ -5,11 +5,15 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { Header } from '@/presentation/components/layout/Header'
 import { Footer } from '@/presentation/components/layout/Footer'
-import { Inter } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google'
 import '@/app/globals.css'
 import { siteConfig } from '@/config/site'
 
-const inter = Inter({ subsets: ['latin'] })
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-jetbrains',
+})
 
 export const metadata: Metadata = {
   title: {
@@ -41,7 +45,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={inter.className}>
+      <body className={jetbrainsMono.className}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main className="min-h-screen">{children}</main>
