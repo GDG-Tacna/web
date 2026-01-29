@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Home",
+    "events": "Events",
+    "members": "Members",
+    "about": "About",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "cta": {
+    "joinCommunity": "Join Community",
+    "viewEvents": "View Events",
+    "learnMore": "Learn More",
+    "getInTouch": "Get in Touch",
+    "register": "Register",
+    "viewDetails": "View Details"
+  },
+  "footer": {
+    "about": "About GDG Tacna",
+    "description": "A community of developers passionate about Google technologies in Tacna, Peru.",
+    "followUs": "Follow Us",
+    "contact": "Contact",
+    "copyright": "© {year} GDG Tacna. All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "notFound": "Not found",
+    "comingSoon": "Coming soon"
+  }
+}

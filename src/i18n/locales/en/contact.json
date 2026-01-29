@@ -1,0 +1,22 @@
+{
+  "title": "Contact Us",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "submit": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "nameMin": "Name must be at least 2 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "subjectRequired": "Subject is required",
+    "subjectMin": "Subject must be at least 5 characters",
+    "messageRequired": "Message is required",
+    "messageMin": "Message must be at least 10 characters"
+  }
+}

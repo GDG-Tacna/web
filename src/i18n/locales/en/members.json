@@ -1,0 +1,12 @@
+{
+  "title": "Community Members",
+  "organizers": "Organizers",
+  "allMembers": "All Members",
+  "role": {
+    "lead": "Lead",
+    "coLead": "Co-Lead",
+    "organizer": "Organizer",
+    "member": "Member",
+    "volunteer": "Volunteer"
+  }
+}

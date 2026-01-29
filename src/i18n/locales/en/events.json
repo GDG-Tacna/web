@@ -1,0 +1,30 @@
+{
+  "title": "Events",
+  "upcoming": "Upcoming Events",
+  "past": "Past Events",
+  "filters": {
+    "all": "All Events",
+    "category": "Category",
+    "status": "Status"
+  },
+  "status": {
+    "upcoming": "Upcoming",
+    "ongoing": "Ongoing",
+    "completed": "Completed",
+    "cancelled": "Cancelled"
+  },
+  "details": {
+    "date": "Date",
+    "location": "Location",
+    "capacity": "Capacity",
+    "attendees": "attendees",
+    "speakers": "Speakers",
+    "register": "Register for Event",
+    "viewDetails": "View Details"
+  },
+  "location": {
+    "online": "Online",
+    "inPerson": "In Person",
+    "hybrid": "Hybrid"
+  }
+}

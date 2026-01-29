@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "events": "Eventos",
+    "members": "Miembros",
+    "about": "Acerca de",
+    "resources": "Recursos",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "joinCommunity": "Únete a la Comunidad",
+    "viewEvents": "Ver Eventos",
+    "learnMore": "Conocer Más",
+    "getInTouch": "Contáctanos",
+    "register": "Registrarse",
+    "viewDetails": "Ver Detalles"
+  },
+  "footer": {
+    "about": "Acerca de GDG Tacna",
+    "description": "Una comunidad de desarrolladores apasionados por las tecnologías de Google en Tacna, Perú.",
+    "followUs": "Síguenos",
+    "contact": "Contacto",
+    "copyright": "© {year} GDG Tacna. Todos los derechos reservados."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error",
+    "notFound": "No encontrado",
+    "comingSoon": "Próximamente"
+  }
+}

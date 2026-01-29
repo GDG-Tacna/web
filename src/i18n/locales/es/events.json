@@ -1,0 +1,30 @@
+{
+  "title": "Eventos",
+  "upcoming": "Próximos Eventos",
+  "past": "Eventos Pasados",
+  "filters": {
+    "all": "Todos los Eventos",
+    "category": "Categoría",
+    "status": "Estado"
+  },
+  "status": {
+    "upcoming": "Próximo",
+    "ongoing": "En Curso",
+    "completed": "Completado",
+    "cancelled": "Cancelado"
+  },
+  "details": {
+    "date": "Fecha",
+    "location": "Ubicación",
+    "capacity": "Capacidad",
+    "attendees": "asistentes",
+    "speakers": "Ponentes",
+    "register": "Registrarse al Evento",
+    "viewDetails": "Ver Detalles"
+  },
+  "location": {
+    "online": "En Línea",
+    "inPerson": "Presencial",
+    "hybrid": "Híbrido"
+  }
+}

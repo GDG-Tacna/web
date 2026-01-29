@@ -1,0 +1,12 @@
+{
+  "title": "Miembros de la Comunidad",
+  "organizers": "Organizadores",
+  "allMembers": "Todos los Miembros",
+  "role": {
+    "lead": "Líder",
+    "coLead": "Co-Líder",
+    "organizer": "Organizador",
+    "member": "Miembro",
+    "volunteer": "Voluntario"
+  }
+}

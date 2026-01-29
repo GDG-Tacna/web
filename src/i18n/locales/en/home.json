@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Welcome to GDG Tacna",
+    "subtitle": "A community of passionate developers in Tacna, Peru",
+    "description": "Join us to learn, share, and build amazing things with Google technologies.",
+    "primaryCta": "Join Community",
+    "secondaryCta": "View Events"
+  },
+  "stats": {
+    "title": "Our Community in Numbers",
+    "members": "Active Members",
+    "events": "Events Hosted",
+    "years": "Years Active"
+  },
+  "upcomingEvents": {
+    "title": "Upcoming Events",
+    "subtitle": "Don't miss our next meetups and workshops",
+    "viewAll": "View All Events",
+    "noEvents": "No upcoming events at the moment. Check back soon!"
+  },
+  "callToAction": {
+    "title": "Ready to Join Us?",
+    "description": "Become part of our growing community of developers and tech enthusiasts.",
+    "button": "Get Started"
+  }
+}
