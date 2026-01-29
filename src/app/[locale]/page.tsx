@@ -273,6 +273,7 @@ export default function HomePage() {
                         alt={member.name}
                         width={96}
                         height={96}
+                        unoptimized={true}
                         className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                     </div>
