@@ -1,11 +1,51 @@
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import { Container } from '@/presentation/components/ui/Container'
 import { Button } from '@/presentation/components/ui/Button'
 import { Link } from '@/i18n/routing'
 import { Users, Calendar, Code, Heart, Lightbulb, Zap } from 'lucide-react'
+import { EventCard } from '@/presentation/components/ui/EventCard'
 
 export default function HomePage() {
   const t = useTranslations('home')
+  const locale = useLocale()
+
+  const events = [
+    {
+      title: 'Google I/O Extended Tacna 2025',
+      date: new Date('2025-07-15'),
+      participants: 120,
+      type: 'upcoming' as const,
+    },
+    {
+      title: 'Android Study Jam',
+      date: new Date('2025-08-20'),
+      participants: 50,
+      type: 'upcoming' as const,
+    },
+    {
+      title: 'Cloud Hero: Kubernetes',
+      date: new Date('2024-10-10'),
+      participants: 80,
+      type: 'past' as const,
+    },
+    {
+      title: 'DevFest Tacna 2024',
+      date: new Date('2024-11-25'),
+      participants: 200,
+      type: 'past' as const,
+    },
+  ]
+
+  const upcomingEvents = events.filter((e) => e.type === 'upcoming')
+  const pastEvents = events.filter((e) => e.type === 'past')
+
+  const formatDate = (date: Date) => {
+    return date.toLocaleDateString(locale, {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    })
+  }
 
   return (
     <div>
@@ -190,6 +230,57 @@ export default function HomePage() {
               <div className="text-neutral-600">{t('stats.years')}</div>
             </div>
           </div>
+        </Container>
+      </section>
+
+      {/* Events Section */}
+      <section className="bg-neutral-50 py-16">
+        <Container>
+          <h2 className="mb-12 text-center text-3xl font-bold text-neutral-900">
+            {t('eventsList.sectionTitle')}
+          </h2>
+
+          {/* Upcoming Events */}
+          {upcomingEvents.length > 0 && (
+            <div className="mb-12">
+              <h3 className="mb-6 text-2xl font-semibold text-neutral-800">
+                {t('eventsList.upcoming')}
+              </h3>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {upcomingEvents.map((event, index) => (
+                  <EventCard
+                    key={index}
+                    title={event.title}
+                    date={formatDate(event.date)}
+                    count={event.participants}
+                    participantsLabel={t('eventsList.participants')}
+                    type="upcoming"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Past Events */}
+          {pastEvents.length > 0 && (
+            <div>
+              <h3 className="mb-6 text-2xl font-semibold text-neutral-800">
+                {t('eventsList.past')}
+              </h3>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {pastEvents.map((event, index) => (
+                  <EventCard
+                    key={index}
+                    title={event.title}
+                    date={formatDate(event.date)}
+                    count={event.participants}
+                    participantsLabel={t('eventsList.participants')}
+                    type="past"
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </Container>
       </section>
 

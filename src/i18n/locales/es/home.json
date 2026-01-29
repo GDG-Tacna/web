@@ -59,6 +59,12 @@
     "viewAll": "Ver Todos los Eventos",
     "noEvents": "No hay eventos próximos en este momento. ¡Vuelve pronto!"
   },
+  "eventsList": {
+    "sectionTitle": "Eventos",
+    "upcoming": "Próximos Eventos",
+    "past": "Eventos Pasados",
+    "participants": "participantes"
+  },
   "callToAction": {
     "title": "¿Listo para Unirte?",
     "description": "Forma parte de nuestra creciente comunidad de desarrolladores y entusiastas de la tecnología.",
