@@ -6,6 +6,47 @@
     "primaryCta": "Únete a la Comunidad",
     "secondaryCta": "Ver Eventos"
   },
+  "whatIsGdg": {
+    "title": "¿Qué es un GDG?",
+    "description": "Los Google Developer Groups (GDG) son comunidades voluntarias sin fines de lucro que reúnen a desarrolladores, estudiantes y profesionales de tecnología interesados en las tecnologías de Google y el desarrollo de software.",
+    "details": "Organizamos eventos, talleres, charlas técnicas y hackathons donde compartimos conocimiento, experiencias y construimos proyectos juntos. Somos parte de una red global de más de 1000 GDGs en todo el mundo.",
+    "features": {
+      "learning": {
+        "title": "Aprendizaje Continuo",
+        "description": "Accede a talleres, charlas técnicas y recursos educativos sobre las últimas tecnologías de Google y tendencias del desarrollo."
+      },
+      "networking": {
+        "title": "Networking",
+        "description": "Conoce y colabora con otros desarrolladores, comparte experiencias y crea conexiones profesionales valiosas."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Participa en hackathons, proyectos colaborativos y experimenta con nuevas tecnologías en un ambiente de apoyo."
+      }
+    }
+  },
+  "whyCommunity": {
+    "title": "¿Por Qué es Importante Ser Parte de una Comunidad Tecnológica?",
+    "subtitle": "Pertenecer a una comunidad de tecnología va más allá de simplemente aprender a programar. Es sobre crecer, conectar y crear impacto juntos.",
+    "benefits": {
+      "growth": {
+        "title": "Crecimiento Profesional Acelerado",
+        "description": "Aprende de las experiencias de otros, mantente actualizado con las últimas tendencias tecnológicas y desarrolla habilidades que no encontrarás en tutoriales en línea. El intercambio de conocimiento en una comunidad te permite crecer más rápido."
+      },
+      "support": {
+        "title": "Red de Apoyo y Mentoría",
+        "description": "Enfrenta desafíos técnicos con el respaldo de otros miembros. Ya seas principiante o experto, siempre hay alguien dispuesto a ayudar o aprender de ti. Las comunidades crean un espacio seguro para hacer preguntas y experimentar."
+      },
+      "opportunities": {
+        "title": "Oportunidades y Visibilidad",
+        "description": "Participa en eventos, da charlas, contribuye a proyectos open source y amplía tu red profesional. Muchas oportunidades laborales y colaboraciones nacen dentro de las comunidades tecnológicas."
+      },
+      "collaboration": {
+        "title": "Colaboración e Impacto",
+        "description": "Trabaja en proyectos que importan, contribuye al ecosistema tecnológico local y comparte tu conocimiento con otros. Juntos podemos crear un impacto positivo en nuestra región y más allá."
+      }
+    }
+  },
   "stats": {
     "title": "Nuestra Comunidad en Números",
     "members": "Miembros Activos",
