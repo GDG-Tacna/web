@@ -2,10 +2,11 @@ import { useTranslations, useLocale } from 'next-intl'
 import { Container } from '@/presentation/components/ui/Container'
 import { Button } from '@/presentation/components/ui/Button'
 import { Link } from '@/i18n/routing'
-import { Users, Calendar, Code, Heart, Lightbulb, Zap } from 'lucide-react'
+import { Users, Calendar, Code, Heart, Lightbulb, Zap, MessageCircle } from 'lucide-react'
 import { communityMembers } from '@/data/members'
 import Image from 'next/image'
 import { EventCard } from '@/presentation/components/ui/EventCard'
+import { siteConfig } from '@/config/site'
 
 export default function HomePage() {
   const t = useTranslations('home')
@@ -351,6 +352,46 @@ export default function HomePage() {
               </div>
             </div>
           )}
+        </Container>
+      </section>
+
+      {/* Join Community Section */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-gdg-blue via-gdg-green to-gdg-blue py-24 md:py-32">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIj48cGF0aCBkPSJNMzYgMzRjMC0yLjIxLTEuNzktNC00LTRzLTQgMS43OS00IDQgMS43OSA0IDQgNCA0LTEuNzkgNC00em0wLTEwYzAtMi4yMS0xLjc5LTQtNC00cy00IDEuNzktNCA0IDEuNzkgNCA0IDQgNC0xLjc5IDQtNHptMC0xMGMwLTIuMjEtMS43OS00LTQtNHMtNCAxLjc5LTQgNCAxLjc5IDQgNCA0IDQtMS43OSA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-10"></div>
+
+        <Container>
+          <div className="relative mx-auto max-w-4xl">
+            <div className="text-center">
+              <div className="mb-6 flex justify-center">
+                <div className="rounded-full bg-white/20 p-6 backdrop-blur-sm animate-float">
+                  <MessageCircle className="h-16 w-16 md:h-20 md:w-20 text-white" />
+                </div>
+              </div>
+
+              <h2 className="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold text-white animate-fade-in">
+                {t('joinCommunity.title')}
+              </h2>
+
+              <p className="mb-10 text-lg md:text-xl text-white/95 max-w-2xl mx-auto leading-relaxed animate-slide-up">
+                {t('joinCommunity.description')}
+              </p>
+
+              <a
+                href={siteConfig.links.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block animate-scale-in"
+              >
+                <Button
+                  size="lg"
+                  className="bg-white text-gdg-blue hover:bg-neutral-50 shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 text-lg px-8 py-6 gap-3 group"
+                >
+                  <MessageCircle className="h-6 w-6 transition-transform duration-300 group-hover:rotate-12" />
+                  {t('joinCommunity.button')}
+                </Button>
+              </a>
+            </div>
+          </div>
         </Container>
       </section>
 

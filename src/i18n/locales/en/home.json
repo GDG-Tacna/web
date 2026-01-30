@@ -73,5 +73,10 @@
     "title": "Ready to Join Us?",
     "description": "Become part of our growing community of developers and tech enthusiasts.",
     "button": "Get Started"
+  },
+  "joinCommunity": {
+    "title": "Join Our Community",
+    "description": "Connect with us, stay updated with the latest events, share ideas, and collaborate with passionate developers from Tacna.",
+    "button": "Join WhatsApp Group"
   }
 }
