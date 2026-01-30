@@ -9,6 +9,7 @@ export const siteConfig = {
     linkedin: 'https://linkedin.com/company/gdgtacna',
     github: 'https://github.com/gdgtacna',
     email: 'tacna@gdg.community.dev',
+    whatsapp: 'https://chat.whatsapp.com/YOUR_GROUP_INVITE_CODE',
   },
   keywords: [
     'GDG',

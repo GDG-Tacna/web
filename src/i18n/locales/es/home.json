@@ -73,5 +73,10 @@
     "title": "¿Listo para Unirte?",
     "description": "Forma parte de nuestra creciente comunidad de desarrolladores y entusiastas de la tecnología.",
     "button": "Comenzar"
+  },
+  "joinCommunity": {
+    "title": "Únete a Nuestra Comunidad",
+    "description": "Conéctate con nosotros, mantente al día con los últimos eventos, comparte ideas y colabora con desarrolladores apasionados de Tacna.",
+    "button": "Unirse al Grupo de WhatsApp"
   }
 }
