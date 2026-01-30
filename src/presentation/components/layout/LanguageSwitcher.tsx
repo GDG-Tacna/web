@@ -19,7 +19,7 @@ export function LanguageSwitcher() {
         <button
           key={loc}
           onClick={() => handleChange(loc)}
-          className={`rounded px-3 py-1 ${
+          className={`rounded px-3 py-1 cursor-pointer ${
             locale === loc
               ? 'bg-gdg-blue text-white'
               : 'bg-neutral-200 text-neutral-700'
