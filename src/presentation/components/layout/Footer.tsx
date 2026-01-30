@@ -56,7 +56,7 @@ export function Footer() {
                   <a
                     key={social.name}
                     href={social.url}
-                    className="group flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 text-neutral-400 transition-all duration-300 hover:bg-white hover:text-neutral-900 hover:scale-110"
+                    className="group flex h-12 w-12 items-center justify-center rounded-full bg-neutral-800 text-neutral-400 transition-all duration-300 hover:bg-white hover:text-neutral-900 hover:scale-110 cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.name}
